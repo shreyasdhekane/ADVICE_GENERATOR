@@ -44,7 +44,11 @@ progress = int(days_elapsed / total_days * 100)
 
 # Display the progress bar
 st.progress(progress)
-st.markdown(f"<h7 style='text-align: left;'> {day_of_year} / 365 </h7>", unsafe_allow_html=True)
+col3,col4=st.columns([20,1])
+with (col3):
+    st.markdown(f"<h5 style='text-align: left;'> {day_of_year} / 365 </h5>", unsafe_allow_html=True)
+with (col4):
+    st.markdown(f"<h5 style='text-align: left;'> {progress}% </h5>", unsafe_allow_html=True)
 
 advice_id = st.text_input('Enter a number to search:', value='')
 # Button to search for advice
