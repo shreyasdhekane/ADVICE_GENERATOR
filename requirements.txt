@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 requests==2.28.2
 streamlit==1.20.0
+=======
+requests==2.28.2
+streamlit==1.20.0
+>>>>>>> 1ac0da3a1f4b25f4324fcc6d36feb507bd40e200
